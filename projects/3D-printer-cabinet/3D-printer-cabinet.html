@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sound Dampened 3D Printer Cabinet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #2c2c2c;
+      color: #f5f5f5;
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+    }
+    a {
+      color: #81c784;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      color: #ff9800;
+      text-decoration: underline;
+    }
+    h1 {
+      color: #81c784;
+    }
+    h2 {
+      color: #81c784;
+      margin-top: 30px;
+    }
+    p {
+      line-height: 1.6;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 60%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+  <a href="../../projects.html">← Back to Projects</a>
+
+  <h1>Sound Dampened 3D Printer Cabinet on a Budget</h1>
+
+  <p>I have constructed a sound dampening cupboard with air extraction so that I can have my 3D printer in the house without the noise or smell.</p>
+
+  <h2>Idea</h2>
+  <p>I used to keep my 3D printer in the garage where it was exposed to drafts and bumps. Previously, as a student, I kept it inside a wardrobe in the house which helped dampen sound. When some furniture was replaced, I used an old wardrobe as the base for this cupboard.</p>
+  <p>This cupboard was built on a very slim budget using mostly leftover materials. With more funding, I would have chosen denser wood than chipboard. The cupboard includes a drawer for printer-related items and a clothes rail to hang filament. I used 20mm copex tubing from a previous project for the exhaust piping.</p>
+
+  <h2>Specifications</h2>
+  <p>Some specs are subjective, so your results may vary!</p>
+  <ul>
+    <li>A cupboard allowing me to sleep in the same room while printing</li>
+    <li>Prevent the smell of printing from lingering during heavy prototyping</li>
+    <li>A drawer for spare parts and tools</li>
+    <li>Additional shelving for extra storage</li>
+    <li>A cheap air extraction method</li>
+  </ul>
+
+  <h2>Result</h2>
+
+  <h3>Sound Dampening</h3>
+  <p>I originally planned to use old gardening kneeling mats but wanted better sound reduction. I bought sound dampening mats designed for classic car dashboards, sound absorbing foam, and sticky door seals. I glued the foam onto the mats inside the cupboard using carpet adhesive, making it much quieter. I did not measure decibel levels but was satisfied with the result.</p>
+
+  <h3>Air Extraction</h3>
+  <p>I had blower fans from a previous project rated at 18 CFM (30.6 m³/h). The cupboard volume is approximately 0.2484 m³, so one fan can replace the air roughly every 29 seconds.</p>
+  <p>I connected two 12V fans in series powered by the printer’s 24V supply. The current draw per fan is 220mA, so I fused the circuit at 250mA. This setup replaces the air every 14 seconds, allowing for some loss due to tubing pressure.</p>
+  <p>I modeled a coupler in Fusion 360 to connect the blower to the copex tubing and 3D printed a manifold to merge two copex outputs into one. The exhaust tubing extends through a window to vent air outside.</p>
+
+  <h3>Power Supply</h3>
+  <p>The printer was placed sideways in the cupboard, so I removed its power supply and mounted it externally on a metal bracket made from a dishwasher carcass scrap. This prevents screwing the power supply directly to chipboard and acts as a heatsink.</p>
+  <p>The bracket holds a double socket and the printer power supply, wired with 2.5mm² flex and fused at 13A. I extended the printer cable using XT60 connectors so the printer can be easily reassembled later. Additional XT60 sockets and wiring were added for fans and lights, controlled by panel-mounted switches with the panel designed in Fusion 360 and printed in PLA.</p>
+
+  <img src="internals-with-printer.jpg" alt="Inside view of the cabinet with the 3D printer installed" />
+
+
+  <h2>Possible Future Modifications</h2>
+  <ul>
+    <li>Add automatic fan switching instead of manual on/off</li>
+    <li>Add OctoPi control to switch lights remotely while monitoring prints</li>
+    <li>Measure power efficiency and temperature inside the cabinet, possibly controlling fans to regulate temperature</li>
+  </ul>
+  <p>These are future considerations; the current setup meets my needs.</p>
+
+
+</body>
+</html>
