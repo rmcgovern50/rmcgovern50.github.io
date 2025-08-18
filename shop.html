@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shop - Science, Engineering and Craic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #81c784;
+      --accent-color: #ff9800;
+      --text-color: #f5f5f5;
+      --background-color: #2c2c2c;
+      --link-color: #81c784;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    nav {
+      margin-bottom: 30px;
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 10px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    h1, h2, h3 {
+      color: var(--primary-color);
+    }
+
+    .product {
+      border: 1px solid #444;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background-color: #3a3a3a;
+    }
+
+    .product h3 {
+      margin-top: 0;
+    }
+
+    .paypal-button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="shop.html">Shop</a>
+  </nav>
+
+  <h1>Shop</h1>
+  <p>Here you can find small books and kits for sale. Each purchase supports my work.</p>
+
+  <div class="product">
+    <h3>Mini eBook: Getting Started with Arduino</h3>
+    <p>10-page beginner's guide with two practical projects. PDF download.</p>
+    <div class="paypal-button">
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_1" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" name="submit" alt="Buy Now with PayPal" />
+        <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+      </form>
+    </div>
+  </div>
+
+  <div class="product">
+    <h3>Kit: Wooden LED Lamp</h3>
+    <p>All parts included. Easy build, includes PDF instructions.</p>
+    <div class="paypal-button">
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_2" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" name="submit" alt="Buy Now with PayPal" />
+        <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+      </form>
+    </div>
+  </div>
+
+  <p>More items coming soon. Thanks for supporting an independent inventor and maker.</p>
+</body>
+</html>
